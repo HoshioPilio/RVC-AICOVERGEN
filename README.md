@@ -71,8 +71,8 @@ Follow the instructions [here](https://www.tutorialexample.com/a-step-guide-to-i
 Open a command line window and run these commands to clone this entire repository and install the additional dependencies required.
 
 ```
-git clone https://github.com/SociallyIneptWeeb/AICoverGen
-cd AICoverGen
+git clone https://github.com/HoshioPilio/RVC-AICOVERGEN
+cd RVC-AICOVERGEN
 pip install -r requirements.txt
 ```
 
