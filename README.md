@@ -5,7 +5,7 @@ Showcase: https://www.youtube.com/watch?v=2qZuE4WM7CM
 
 Setup Guide: https://www.youtube.com/watch?v=pdlhk4vVHQk
 
-![](images/webui_generate.png?raw=true)
+![](images/main_tab.png?raw=true)
 
 WebUI is under constant development and testing, but you can try it out right now on both local and colab!
 
@@ -115,7 +115,7 @@ Once the 2 input fields are filled in, simply click `Download`! Once the output 
 
 ### Upload RVC models via WebUI
 
-![](images/webui_upload_model.png?raw=true)
+![](images/Tadownload_models.png?raw=true)
 
 For people who have trained RVC v2 models locally and would like to use them for AI Cover generations.
 Navigate to the `Upload model` tab, and follow the instructions.
