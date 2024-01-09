@@ -105,21 +105,13 @@ Once the following output message `Running on local URL:  http://127.0.0.1:7860`
 
 ### Download RVC models via WebUI
 
-![](images/webui_dl_model.png?raw=true)
+![](images/Tadownload_models.png?raw=true)
 
 Navigate to the `Download model` tab, and paste the download link to the RVC model and give it a unique name.
 You may search the [AI Hub Discord](https://discord.gg/aihub) where already trained voice models are available for download. You may refer to the examples for how the download link should look like.
 The downloaded zip file should contain the .pth model file and an optional .index file.
 
 Once the 2 input fields are filled in, simply click `Download`! Once the output message says `[NAME] Model successfully downloaded!`, you should be able to use it in the `Generate` tab after clicking the refresh models button!
-
-### Upload RVC models via WebUI
-
-![](images/Tadownload_models.png?raw=true)
-
-For people who have trained RVC v2 models locally and would like to use them for AI Cover generations.
-Navigate to the `Upload model` tab, and follow the instructions.
-Once the output message says `[NAME] Model successfully uploaded!`, you should be able to use it in the `Generate` tab after clicking the refresh models button!
 
 
 ### Running the pipeline via WebUI
