@@ -170,9 +170,7 @@ if __name__ == '__main__':
 
         gr.HTML("<h1> The AICoverGen WebUI </h1>")
 
-       gr.Markdown("huggngface space version")
-        gr.Markdown("[![huggngface Space](https://huggingface.co/datasets/huggingface/badges/raw/main/deploy-on-spaces-md.svg)](https://huggingface.co/spaces/Lask8/AICoverGen-v2)\n\n") 
-        
+    
         # main tab
         with gr.Tab("Generate"):
 
