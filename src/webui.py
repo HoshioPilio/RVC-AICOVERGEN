@@ -14,6 +14,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 mdxnet_models_dir = os.path.join(BASE_DIR, 'mdxnet_models')
 rvc_models_dir = os.path.join(BASE_DIR, 'rvc_models')
 output_dir = os.path.join(BASE_DIR, 'song_output')
+instrumental_dir = os.path.join(BASE_DIR, 'audios')
+vocal_dir = os.path.join(BASE_DIR, 'vocal_file')
 
 
 def get_current_models(models_dir):
@@ -225,9 +227,8 @@ if __name__ == '__main__':
                 output_format = gr.Dropdown(['mp3', 'wav'], value='mp3', label='Output file type', info='mp3: small file size, decent quality. wav: Large file size, best quality')
 
             with gr.Row():
-                clear_btn = gr.ClearButton(value='Clear', components=[song_input, rvc_model, keep_files, local_file])
                 generate_btn = gr.Button("Generate", variant='primary')
-                ai_cover = gr.Audio(label='AI Cover', show_share_button=False)
+                ai_cover = gr.Audio(label='Output', show_share_button=False)
 
             ref_btn.click(update_models_list, None, outputs=rvc_model)
             is_webui = gr.Number(value=1, visible=False)
