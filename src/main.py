@@ -26,6 +26,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 mdxnet_models_dir = os.path.join(BASE_DIR, 'mdxnet_models')
 rvc_models_dir = os.path.join(BASE_DIR, 'rvc_models')
 output_dir = os.path.join(BASE_DIR, 'song_output')
+instrumental_dir = os.path.join(BASE_DIR, 'audios')
+vocal_dir = os.path.join(BASE_DIR, 'vocal_file')
 
 
 def get_youtube_video_id(url, ignore_playlist=True):
@@ -110,14 +112,14 @@ def get_audio_paths(song_dir):
 
     for file in os.listdir(song_dir):
         if file.endswith('_Instrumental.wav'):
-            instrumentals_path = os.path.join(song_dir, file)
+            instrumentals_path = os.path.join(instrumental_dir, file)
             orig_song_path = instrumentals_path.replace('_Instrumental', '')
 
         elif file.endswith('_Vocals_Main_DeReverb.wav'):
-            main_vocals_dereverb_path = os.path.join(song_dir, file)
+            main_vocals_dereverb_path = os.path.join(vocal_dir, file)
 
         elif file.endswith('_Vocals_Backup.wav'):
-            backup_vocals_path = os.path.join(song_dir, file)
+            backup_vocals_path = os.path.join(vocal_dir, file)
 
     return orig_song_path, instrumentals_path, main_vocals_dereverb_path, backup_vocals_path
 
