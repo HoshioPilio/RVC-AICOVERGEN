@@ -166,8 +166,8 @@ if __name__ == '__main__':
     with open(os.path.join(rvc_models_dir, 'public_models.json'), encoding='utf8') as infile:
         public_models = json.load(infile)
 
-    with gr.Blocks(title='AICoverGen',theme=gr.themes.Soft(primary_hue=gr.themes.colors.blue, secondary_hue=gr.themes.colors.blue)) as app:
-
+    with gr.Blocks(title='AICoverGen',theme='Hev832/Hev') as app:
+            
         gr.HTML("<h1> The AICoverGen WebUI </h1>")
 
     
